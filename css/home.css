@@ -95,9 +95,9 @@ nav ul li a:hover::after {
     background: transparent;
     border: 3px solid white;
     color: #FFF;
-    cursor: pointer;
     font-weight: 600;
     font-size: large;
+    animation: flutuar 3.6s ease-in-out infinite;
 }
 
 .texto_container button::after {
