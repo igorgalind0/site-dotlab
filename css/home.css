@@ -1,0 +1,107 @@
+/*CSS do Header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+header img {
+    width: 129px;
+    height: 129px;
+}
+
+/*CSS do menu*/
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 47px;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-preto);
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: var(--cor-vermelho);
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 103%;
+    height: 3px;
+    background-color: var(--cor-vermelho);
+    transform: scaleX(0);
+    transition: transform ease 0.3s;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/*Main*/
+
+.banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+#fundo_img {
+    background-color: var(--cor-vermelho);
+}
+
+.texto_container {
+    position: absolute;
+    width: 485px;
+    top: 85px;
+    left: 99px;
+    z-index: 1;
+    color: #FFF; 
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.texto_container h1{
+    font-size: 2rem;
+}
+
+.texto_container p {
+    font-size: 1.25rem;
+}
+
+.texto_container button {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background: transparent;
+    border: 3px solid white;
+    color: #FFF;
+    font-weight: 600;
+    font-size: large;
+    animation: flutuar 3.6s ease-in-out infinite;
+}
+
+.texto_container button::after {
+    margin-left: 10px;
+    content: url(/img/Vector.png);
+}
+
