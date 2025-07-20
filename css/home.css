@@ -52,7 +52,7 @@ nav ul li a:hover::after {
     transform: scaleX(1);
 }
 
-/*Main*/
+/*Banner & Banner Info*/
 
 .banner {
     margin-top: 50px;
@@ -62,16 +62,17 @@ nav ul li a:hover::after {
 .banner img{
     width: 100%;
     height: auto;
+    z-index: -1;
 }
 
 #fundo_img {
     background-color: var(--cor-vermelho);
 }
 
-.texto_container {
+.banner_info_container {
     position: absolute;
     width: 485px;
-    top: 85px;
+    top: 60px;
     left: 99px;
     z-index: 1;
     color: #FFF; 
@@ -80,15 +81,15 @@ nav ul li a:hover::after {
     gap: 17px;
 }
 
-.texto_container h1{
+.banner_info_container h1{
     font-size: 2rem;
 }
 
-.texto_container p {
+.banner_info_container p {
     font-size: 1.25rem;
 }
 
-.texto_container button {
+.banner_info_container button {
     width: 300px;
     height: 50px;
     border-radius: 25px;
@@ -100,8 +101,234 @@ nav ul li a:hover::after {
     animation: flutuar 3.6s ease-in-out infinite;
 }
 
-.texto_container button::after {
+.banner_info_container button::after {
     margin-left: 10px;
     content: url(/img/Vector.png);
 }
 
+/*Main*/
+
+.main_img {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -6.7px;
+    z-index: -2;
+}
+
+#teia_1 {
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    right: 0;
+}
+
+#teia_2 {
+    position: absolute;
+    z-index: -4;
+    bottom: -1820px;
+    left: -24px;
+}
+
+.main_info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 9px;
+    margin-bottom: 80px;
+}
+
+.main_info h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-vermelho);
+}
+
+.main_info p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--cor-preto);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.card_caixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 560px;
+    height: 225px;
+    background-color: #FFF;
+    box-shadow: 0px 6px 6px 3px #00000026;
+    border-radius: 8px;
+    position: relative;
+}
+
+.card_caixa::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 19px;
+    background-color: var(--before-color);
+    border-radius: 8px 0 0 8px;
+}
+
+.card_cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 0px 0px 0px;
+    width: 340px;
+}
+
+.card_info p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+}
+
+.card_info span a{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--before-color);
+}
+
+.link_card {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}
+
+#angels_img {
+    width: 163px;
+    height: auto;
+}
+
+#hansenai_img {
+    width: 150px;
+    height: auto;
+}
+
+#valeria_img {
+    width: 132px;
+    height: auto;
+}
+
+#iara_img {
+    width: 149px;
+    height: auto;
+}
+
+#tito_img {
+    width: 102px;
+    height: auto;
+}
+
+.tito {
+    padding-left: 18px;
+}
+
+.info_final_texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 83px;
+    gap: 20px;
+}
+
+.info_final_texto h1{
+    font-size: 2rem;
+    color: var(--cor-vermelho);
+}
+
+.info_final_texto p{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--cor-preto);
+}
+
+.dados_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 45px;
+}
+
+.dados_caixa {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 16px;
+    width: 345px;
+    height: 109px;
+    background-color: #FFF;
+    box-shadow: 0px 8px 8px 3px #00000033;
+    border-radius: 8px;
+    position: relative;
+}
+
+.dados_cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.dados_cont p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-vermelho);
+}
+
+.caixa_icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background-color: var(--cor-vermelho);
+    border-radius: 9px;
+}
+
+#pesquisador_img {
+    width: 34px;
+    height: 22px;
+}
+
+#instituto_img {
+    width: 30px;
+    height: 28px;
+}
+
+#publicacao_img {
+    width: 23px;
+    height: 29px;
+}
+
+#globo_img {
+    width: 28px;
+    height: 28px;
+}
+
+#solucao_img {
+    width: 31px;
+    height: 30px;
+}
+
+#ia_img {
+    width: 34px;
+    height: 34px;
+}
