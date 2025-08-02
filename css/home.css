@@ -467,59 +467,41 @@ nav ul li a:hover::after {
   margin: 0 30px ;
 }
 
-.swiper {
-  padding: 20px 0 50px 0;
+/*Carrossel Parceiros*/
+
+.parceiros {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
 }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.parceiros img {
+    width: 200px;
+    height: auto;
 }
 
-.swiper-slide img {
-  max-width: 300px;
-  height: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
+#image-list {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: max-content;
+    animation: slide 10s linear infinite;
 }
 
-/* Botões personalizados */
-.swiper-button-prev,
-.swiper-button-next {
-  background-color: var(--cor-vermelho);
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  transform: translateY(-50%);
+#image-list {
+    flex-shrink: 0;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* Paginação personalizada */
-.swiper-pagination {
-  margin-top: 20px;
-  position: static;
-}
-
-.swiper-pagination-bullet {
-  background-color: #ccc;
-  opacity: 1;
-  width: 10px;
-  height: 10px;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--cor-vermelho);
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* Footer */
