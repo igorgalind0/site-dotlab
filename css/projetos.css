@@ -102,6 +102,18 @@ nav ul li a:hover::after {
     height: 837.7px;
 }
 
+.teia2-projetos {
+    position: relative;
+    left: 50px;
+    bottom:530px;
+    z-index: -4;
+}
+
+.teia2-projetos img{
+    width: 830px;
+    height: 830px;
+}
+
 /* Main */
 
 .cards {
@@ -171,7 +183,7 @@ nav ul li a:hover::after {
 .card_info a::after {
     position: absolute;
     z-index: 50;
-    content: url(/img/icons/Vector.svg);
+    content: url(/img/icons/seta.png);
     top: 10px;
     left: 11.5px;
 }
@@ -203,6 +215,8 @@ nav ul li a:hover::after {
     padding-top: 40px;
 }
 
+/*Dashboard*/
+
 .texto-dashboard{
     display: flex;
     flex-direction: column;
@@ -218,4 +232,133 @@ nav ul li a:hover::after {
     color: #282425;
     font-size: 1.25rem;
     font-weight: 500;
+}
+
+.cards-dash {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    position: relative;
+    bottom: -90px;
+}
+
+.card_caixa_dash{
+    width: 560px;
+    height: 426px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.card_caixa_dash::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 100%;
+    height: 21px;
+    background-color: var(--before-color);
+    border-radius: 0px 0px 8px 8px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.card_cont_dash{
+    position: relative;
+}
+
+.card_cont_dash img{
+    width: 560px;
+    height: 426px;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+.footer {
+  background: url('/img/img 5.png') no-repeat center center;
+  background-size: cover;
+  background-color: var(--cor-preto);
+  padding: 60px 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  color: #fff;
+}
+
+.footer-logo-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 250px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
+
+.contato h3,
+.footer-links h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contato p {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.footer-links {
+  margin-top: 150px;
+  margin-left: 100px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 6px 0;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #fff;
 }
