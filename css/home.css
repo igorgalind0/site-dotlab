@@ -72,7 +72,7 @@ nav ul li a:hover::after {
 /*Banner & Banner Info*/
 
 .banner {
-  background: url("/img/img 1.png") no-repeat center center;
+  background: url("../img/img 1.png") no-repeat center center;
   background-size: cover;
   background-color: var(--cor-vermelho);
   padding: 100px 40px 100px;
@@ -110,7 +110,7 @@ nav ul li a:hover::after {
 
 .banner_info_container button::after {
   margin-left: 10px;
-  content: url(/img/Vector.png);
+  content: url(../img/Vector.png);
 }
 
 /*Main*/
@@ -375,7 +375,7 @@ nav ul li a:hover::after {
 
 .banner_fim {
   position: relative;
-  background: url("/img/img 4.png") no-repeat center center;
+  background: url("../img/img 4.png") no-repeat center center;
   background-size: cover;
   padding: 80px 40px 80px;
   background-color: var(--cor-vermelho);
@@ -535,7 +535,7 @@ nav ul li a:hover::after {
 /* Footer */
 
 .footer {
-  background: url("/img/img 5.png") no-repeat center center;
+  background: url("../img/img 5.png") no-repeat center center;
   background-size: cover;
   background-color: var(--cor-preto);
   padding: 60px 40px 20px;
