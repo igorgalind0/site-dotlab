@@ -1,30 +1,12 @@
-/*JS para o swiper das conexões*/
+/*Animação do carrossel dos parceiros*/
 
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 60,
-  loop: true,
-  autoplay: {
-    delay: 3000, // tempo entre slides em milissegundos (3000 = 3s)
-    disableOnInteraction: false, // continua após interação
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    1024: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    0: {
-      slidesPerView: 1,
-    },
-  },
-});
+window.onload = () => {
+        const list = document.getElementById('image-list');
+        const items = list.querySelectorAll('li'); // Seleciona todos os itens
+    
+        // Duplicando os itens da lista para garantir um ciclo contínuo
+        items.forEach(item => {
+            const clone = item.cloneNode(true); // Clona o item
+            list.appendChild(clone); // Adiciona a cópia ao final da lista
+        });
+    };
