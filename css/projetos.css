@@ -1,0 +1,221 @@
+/*CSS do Header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+header img {
+    width: 129px;
+    height: 129px;
+}
+
+/*CSS do menu*/
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 47px;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-preto);
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: var(--cor-vermelho);
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 103%;
+    height: 3px;
+    background-color: var(--cor-vermelho);
+    transform: scaleX(0);
+    transition: transform ease 0.3s;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/*Banner & Banner Info*/
+
+.banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+#fundo_img {
+    background-color: var(--cor-vermelho);
+}
+
+.banner_info_container {
+    position: absolute;
+    top: 60px;
+    left: 99px;
+    z-index: 1;
+    color: #FFF; 
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.banner_info_container h1{
+    font-size: 2rem;
+}
+
+.banner_info_container p {
+    font-size: 1.25rem;
+}
+
+/*Teias*/
+
+.teia1-projetos {
+    position: absolute;
+    top: 439px;
+    right: -240px;
+    z-index: -4;
+}
+
+.teia1-projetos img{
+    width: 837.7px;
+    height: 837.7px;
+}
+
+/* Main */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    position: relative;
+    top: -290px;
+}
+
+.card_caixa{
+    width: 560px;
+    height: 426px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.card_caixa::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 100%;
+    height: 21px;
+    background-color: var(--before-color);
+    border-radius: 0px 0px 8px 8px;
+    pointer-events: none;
+    transition: height 0.4s ease;
+}
+
+.card_caixa:hover::after {
+    height: 180px;
+}
+
+.card_cont{
+    position: relative;
+}
+
+.card_cont img{
+    width: 560px;
+    height: 426px;
+    border-radius: 8px;
+}
+
+.card_info {
+    position: absolute;
+    right: 20px;
+    bottom: 35px;
+    z-index: 10;
+}
+
+.card_info a{
+    position: relative;
+    width: 39px;
+    height: 39px;
+    border: 3px solid var(--before-color);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+/*
+.card_info a::after {
+    position: absolute;
+    z-index: 50;
+    content: url(/img/icons/Vector.svg);
+    top: 10px;
+    left: 11.5px;
+}
+*/
+.card_hover_texto {
+    width: 85%;
+    height: 180px;
+    position: absolute;
+    bottom: -40px;
+    left: 20px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    text-align: flex-start;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.card_caixa:hover .card_hover_texto {
+    opacity: 1;
+    visibility: visible;
+}
+
+#hansenai-projeto{
+    width: 560px;
+    height: auto;
+    padding-top: 40px;
+}
+
+.texto-dashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.texto-dashboard h1{
+    color: var(--cor-vermelho);
+    font-size: 2rem;
+}
+
+.texto-dashboard p{
+    color: #282425;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
