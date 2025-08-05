@@ -253,6 +253,11 @@ nav ul li a:hover::after {
   height: auto;
 }
 
+#SophIA_img {
+  width: 173px;
+  height: auto;
+}
+
 #tito_img {
   width: 102px;
   height: auto;
