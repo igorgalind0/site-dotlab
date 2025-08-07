@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 /*CSS do Header*/
 
 header {
@@ -106,28 +110,24 @@ nav ul li a:hover::after {
 
 /*Teias*/
 
-.teia1-projetos {
-    position: absolute;
-    top: 439px;
-    right: -240px;
-    z-index: -4;
+.teia {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1; /* abaixo do conteúdo */
+  overflow-x: hidden;
 }
 
-.teia1-projetos img{
-    width: 837.7px;
-    height: 837.7px;
+#teia1-projetos {
+  top: 100px;
+  left: 800px;
+  width: auto;
+  overflow-x: hidden;
 }
 
-.teia2-projetos {
-    position: relative;
-    left: 50px;
-    bottom:530px;
-    z-index: -4;
-}
-
-.teia2-projetos img{
-    width: 830px;
-    height: 830px;
+#teia2-projetos {
+  top: 2827px;
+  left: 0;
+  width: auto;
 }
 
 /* Main */
@@ -141,8 +141,8 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    position: relative;
-    top: -290px;
+    margin-top: -290px;
+    position: static;
 }
 
 .card_caixa{
@@ -200,15 +200,19 @@ nav ul li a:hover::after {
 }
 
 
-/*
 .card_info a::after {
+    content: "";
     position: absolute;
     z-index: 50;
-    content: url(/img/icons/seta.png);
-    top: 10px;
-    left: 11.5px;
+    width: 19.8px;
+    height: 15.54px;
+    top: 11.5px;
+    left: 12.5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: var(--seta-url);
 }
-*/
+
 .card_hover_texto {
     width: 85%;
     height: 180px;
@@ -242,6 +246,7 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding: 100px 0;
 }
 
 .texto-dashboard h1{
@@ -259,8 +264,8 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    position: relative;
-    bottom: -90px;
+    position: static;
+    margin-bottom: 190px;
 }
 
 .card_caixa_dash{
