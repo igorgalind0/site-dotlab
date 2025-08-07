@@ -1,222 +1,274 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>dotLAB Brazil</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/var.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/home.css" rel="stylesheet" />
+    <link href="./css/respansivos/home_responsivo.css" rel="stylesheet" />
+    <link href="./css/var.css" rel="stylesheet" />
   </head>
+
   <body>
+
     <header class="container">
-      <img src="/img/logos/dotLab 1.png" alt="" />
+      <img alt="Logo do dotLAB Brasil" src="./img/logos/dotLab 1.png" />
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
       <nav>
         <ul>
           <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li><a href="#Iniciativas">Sobre</a></li>
+          <li><a href="./projetos.html">Projetos</a></li>
           <li><a href="#">Parceria</a></li>
         </ul>
       </nav>
     </header>
-
+    
     <section class="banner">
-      <img src="/img/img 1.png" id="fundo_img" alt="" />
       <div class="banner_info_container container">
         <h1>Inteligência Artificial para transformar a Saúde Pública</h1>
         <p>
           Grupo de pesquisa interinstitucional com foco em Doenças Tropicais
           Negligenciadas.
         </p>
-
-        <button>Conheça o DotLab</button>
+        <button onclick="window.location.href='#Iniciativas'">Conheça o DotLab</button>
       </div>
     </section>
+ 
+    <main class="container" id="Iniciativas">
+      <section class="main-section">
+        <img src="./img/img 2.png" alt="" class="teia" id="teia1" aria-hidden="true">
+        <img src="./img/img 3.png" alt="" class="teia" id="teia2" aria-hidden="true">
 
-    <section class="main_img">
-      <img src="/img/img 2.png" id="teia_1" alt="" />
-    </section>
+        <div class="main-container">
+          <div class="main_info container">
+            <h1>Nossas Iniciativas Científicas</h1>
+            <p>
+              Projetos do dotLAB Brasil que aplicam inteligência artificial para
+              enfrentar desafios da saúde pública, com foco nas Doenças Tropicais
+              Negligenciadas.
+            </p>
+          </div>
 
-    <main class="container">
-      <div class="main_info container">
-        <h1>Nossas Iniciativas Científicas</h1>
-        <p>
-          Projetos do dotLAB Brasil que aplicam inteligência artificial para
-          enfrentar desafios da saúde pública, com foco nas Doenças Tropicais
-          Negligenciadas.
-        </p>
-      </div>
+          <section class="cards container">
 
-      <section class="cards container">
-        <div id="angels" class="card_caixa" data-color="#B1488A">
-          <div class="card_cont">
-            <img id="angels_img" src="/img/logos/angels.png" alt="" />
-            <div class="card_info">
+            <div class="card_caixa" data-color="#B1488A" id="angels">
+              <div class="card_cont">
+                <img
+                  alt="Logo do projeto Angels"
+                  id="angels_img"
+                  src="./img/logos/angels.png"
+                />
+                <div class="card_info">
+                  <p>
+                    Predição do risco de óbito fetal ao longo do acompanhamento
+                    pré-natal contínuo, utilizando dados clínicos e modelos
+                    preditivos.
+                  </p>
+                  <span class="link_card"><a href="">Conhecer solução</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_caixa" data-color="#4b2d2f" id="SophIA">
+              <div class="card_cont">
+                <img
+                  alt="logo do projeto SophIA"
+                  id="SophIA_img"
+                  src="./img/logos/sophIA.svg"
+                />
+                <div class="card_info">
+                  <p>
+                    Uso de IA para predição de doenças, condições clínicas e 
+                    mortalidade neonatal com dados de um hospital público de 
+                    referência em Pernambuco.
+                  </p>
+                  <span class="link_card"><a href="">Conhecer solução</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_caixa" data-color="#6D349D" id="hansenai">
+              <div class="card_cont">
+                <img
+                  alt="Logo do projeto Hansen.ai"
+                  id="hansenai_img"
+                  src="./img/logos/hansenai.png"
+                />
+                <div class="card_info">
+                  <p>
+                    Predição e monitoramento inteligente da resposta ao tratamento
+                    da hanseníase, com base em dados clínicos e históricos do
+                    paciente.
+                  </p>
+                  <span class="link_card"><a href="">Conhecer solução</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_caixa" data-color="#3EB7A0" id="valeria">
+              <div class="card_cont">
+                <img
+                  alt="Logo do projeto Valéria"
+                  id="valeria_img"
+                  src="./img/logos/valeria.png"
+                />
+                <div class="card_info">
+                  <p>
+                    Identificação precoce e automatizada de arboviroses por meio de
+                    técnicas de inteligência artificial aplicadas a dados clínicos e
+                    epidemiológicos.
+                  </p>
+                  <span class="link_card"><a href="">Conhecer solução</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_caixa" data-color="#8C0738" id="iara">
+              <div class="card_cont">
+                <img
+                  alt="Logo do projeto IARA"
+                  id="iara_img"
+                  src="./img/logos/IARA.png"
+                />
+                <div class="card_info">
+                  <p>
+                    Aplicação de técnicas de machine learning para vigilância ativa
+                    e preditiva da malária, com base em dados epidemiológicos e
+                    ambientais.
+                  </p>
+                  <span class="link_card"><a href="">Conhecer solução</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_caixa" data-color="#411310" id="tito">
+              <div class="card_cont">
+                <img
+                  alt="Logo do projeto Tito"
+                  id="tito_img"
+                  src="./img/logos/tito.png"
+                />
+                <div class="card_info">
+                  <p class="tito">
+                    Aplicação de técnicas de machine learning para vigilância ativa
+                    e preditiva da malária, com base em dados epidemiológicos e
+                    ambientais.
+                  </p>
+                  <span class="link_card"><a href="">Conhecer solução</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card_caixa" data-color="#F72120" id="dash_boards">
+              <div class="card_cont">
+                <img
+                  alt="Logo dos Dashboards dotLAB"
+                  id="dashboards_img"
+                  src="./img/logos/DASH BOARDS.png"
+                />
+                <div class="card_info">
+                  <p class="dashboard">
+                    <a href="#SophIA">- Dashboard SophIA</a>
+                    <a href="#angels">- Dashboard Angels</a>
+                    <a href="#HansenAI">- Dashboard Hansen.ai</a>
+                    <a href="#Zika">- Dashboard Zika</a>
+                    <a href="#IAra">- Dashboard IAra</a>
+                    <a href="#HSG">- Dashboard HSG</a>
+                    <a href="#Chika">- Dashboard Chika</a>
+                  </p>
+                  <span class="link_dash"
+                    ><a href="" style="color:#000000; font-weight: 500;">Conheça nossos dashboards <br/> (painel interativo)</a></span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="container">
+            <div class="info_final_texto">
+              <h1>Nosso impacto em dados</h1>
               <p>
-                Predição do risco de óbito fetal ao longo do acompanhamento
-                pré-natal contínuo, utilizando dados clínicos e modelos
-                preditivos.
+                O dotLAB Brasil é um grupo de pesquisa interdisciplinar que conecta
+                ciência, inovação e saúde pública. Atuamos com abrangência nacional
+                e reconhecimento internacional.
               </p>
-              <span class="link_card"><a href="">Conhecer solução</a></span>
             </div>
-          </div>
+
+            <div class="dados_cards">
+              <div class="dados_caixa">
+                <div class="dados_cont" id="dados_pesq">
+                  <span class="caixa_icone"
+                    ><img
+                      alt=""
+                      id="pesquisador_img"
+                      src="./img/icons/pesquisadores.png"
+                  /></span>
+                  <p>+25 pesquisadores</p>
+                </div>
+              </div>
+
+              <div class="dados_caixa">
+                <div class="dados_cont" id="dados_inst">
+                  <span class="caixa_icone"
+                    ><img alt="" id="instituto_img" src="./img/icons/institudo.png"
+                  /></span>
+                  <p>+10 instituições</p>
+                </div>
+              </div>
+
+              <div class="dados_caixa">
+                <div class="dados_cont" id="dados_publi">
+                  <span class="caixa_icone"
+                    ><img
+                      alt=""
+                      id="publicacao_img"
+                      src="./img/icons/publicacao.png"
+                  /></span>
+                  <p>+40 publicações</p>
+                </div>
+              </div>
+
+              <div class="dados_caixa">
+                <div class="dados_cont" id="dados_globo">
+                  <span class="caixa_icone"
+                    ><img alt="" id="globo_img" src="./img/icons/globo.png"
+                  /></span>
+                  <p>Em cinco estados</p>
+                </div>
+              </div>
+
+              <div class="dados_caixa">
+                <div class="dados_cont" id="dados_solcao">
+                  <span class="caixa_icone"
+                    ><img alt="" id="solucao_img" src="./img/icons/sulucao.png"
+                  /></span>
+                  <p>+6 soluções reais</p>
+                </div>
+              </div>
+
+              <div class="dados_caixa">
+                <div class="dados_cont" id="dados_ia">
+                  <span class="caixa_icone"
+                    ><img alt="" id="ia_img" src="./img/icons/ia.png"
+                  /></span>
+                  <p>+15 modelos de IA</p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-
-        <div id="hansenai" class="card_caixa" data-color="#6D349D">
-          <div class="card_cont">
-            <img id="hansenai_img" src="/img/logos/hansenai.png" alt="" />
-            <div class="card_info">
-              <p>
-                Predição e monitoramento inteligente da resposta ao tratamento
-                da hanseníase, com base em dados clínicos e históricos do
-                paciente.
-              </p>
-              <span class="link_card"><a href="">Conhecer solução</a></span>
-            </div>
-          </div>
-        </div>
-
-        <div id="valeria" class="card_caixa" data-color="#3EB7A0">
-          <div class="card_cont">
-            <img id="valeria_img" src="/img/logos/valeria.png" alt="" />
-            <div class="card_info">
-              <p>
-                Identificação precoce e automatizada de arboviroses por meio de
-                técnicas de inteligência artificial aplicadas a dados clínicos e
-                epidemiológicos.
-              </p>
-              <span class="link_card"><a href="">Conhecer solução</a></span>
-            </div>
-          </div>
-        </div>
-
-        <div id="iara" class="card_caixa" data-color="#8C0738">
-          <div class="card_cont">
-            <img id="iara_img" src="/img/logos/IARA.png" alt="" />
-            <div class="card_info">
-              <p>
-                Aplicação de técnicas de machine learning para vigilância ativa
-                e preditiva da malária, com base em dados epidemiológicos e
-                ambientais.
-              </p>
-              <span class="link_card"><a href="">Conhecer solução</a></span>
-            </div>
-          </div>
-        </div>
-
-        <div id="tito" class="card_caixa" data-color="#411310">
-          <div class="card_cont">
-            <img id="tito_img" src="/img/logos/tito.png" alt="" />
-            <div class="card_info">
-              <p class="tito">
-                Aplicação de técnicas de machine learning para vigilância ativa
-                e preditiva da malária, com base em dados epidemiológicos e
-                ambientais.
-              </p>
-              <span class="link_card"><a href="">Conhecer solução</a></span>
-            </div>
-          </div>
-        </div>
-
-        <div id="dash_boards" class="card_caixa" data-color="#F72120">
-          <div class="card_cont">
-            <img id="dash_boards_img" src="/img/logos/DASH BOARDS.png" alt="" />
-            <div class="card_info">
-              <ul class="coluna">
-                <li>- Dashboard Angels</li>
-                <li>- Dashboard Hansen.ai</li>
-                <li>- Dashboard Zika</li>
-                <li>- Dashboard Iara</li>
-                <li>- Dashboard HSG</li>
-                <li>- Dashboard Chika</li>
-              </ul>
-              <span class="link_card"><a href="">Conheça nossos dashboards</a></span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <img src="/img/img 3.png" alt="" id="teia_2" />
-
-      <section class="container">
-        <div class="info_final_texto">
-          <h1>Nosso impacto em dados</h1>
-          <p>
-            O dotLAB Brasil é um grupo de pesquisa interdisciplinar que conecta
-            ciência, inovação e saúde pública. Atuamos com abrangência nacional
-            e reconhecimento internacional.
-          </p>
-        </div>
-
-        <div class="dados_cards">
-          <div class="dados_caixa">
-            <div class="dados_cont" id="dados_pesq">
-              <span class="caixa_icone"
-                ><img
-                  id="pesquisador_img"
-                  src="/img/icons/pesquisadores.png"
-                  alt=""
-              /></span>
-              <p>+25 pesquisadores</p>
-            </div>
-          </div>
-
-          <div class="dados_caixa">
-            <div class="dados_cont" id="dados_inst">
-              <span class="caixa_icone"
-                ><img id="instituto_img" src="/img/icons/institudo.png" alt=""
-              /></span>
-              <p>+10 instituições</p>
-            </div>
-          </div>
-
-          <div class="dados_caixa">
-            <div class="dados_cont" id="dados_publi">
-              <span class="caixa_icone"
-                ><img
-                  id="publicacao_img"
-                  src="/img/icons/publicacao.png"
-                  alt=""
-              /></span>
-              <p>+40 publicações</p>
-            </div>
-          </div>
-
-          <div class="dados_caixa">
-            <div class="dados_cont" id="dados_globo">
-              <span class="caixa_icone"
-                ><img id="globo_img" src="/img/icons/globo.png" alt=""
-              /></span>
-              <p>Em cinco estados</p>
-            </div>
-          </div>
-
-          <div class="dados_caixa">
-            <div class="dados_cont" id="dados_solcao">
-              <span class="caixa_icone"
-                ><img id="solucao_img" src="/img/icons/sulucao.png" alt=""
-              /></span>
-              <p>+6 soluções reais</p>
-            </div>
-          </div>
-
-          <div class="dados_caixa">
-            <div class="dados_cont" id="dados_ia">
-              <span class="caixa_icone"
-                ><img id="ia_img" src="/img/icons/ia.png" alt=""
-              /></span>
-              <p>+15 modelos de IA</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      </section>    
     </main>
 
-    <section class="banner">
-      <img src="/img/img 4.png" id="fundo_img" alt="" />
 
+    <section class="banner_fim">
       <div class="banner_info_com">
         <div class="texto_banner">
           <h1>Tecnologia que serve à vida</h1>
@@ -229,20 +281,19 @@
         </div>
 
         <div class="cards_final">
-          
           <div class="cont">
             <div class="icon">
-              <img id="proposito_img" src="/img/icons/proposito.png" alt="" />
+              <img alt="" id="proposito_img" src="./img/icons/proposito.png" />
             </div>
             <div class="texto">
               <strong>Propósito</strong>
               <p>Usar IA para melhorar políticas públicas em saúde</p>
             </div>
-          </div> 
+          </div>
 
           <div class="cont">
             <div class="icon">
-              <img id="acessibilidade_img" src="/img/icons/acessibilidade.png" alt="" />
+              <img alt="" id="acessibilidade_img" src="./img/icons/acessibilidade.png"/>
             </div>
             <div class="texto">
               <strong>Acessibilidade</strong>
@@ -252,12 +303,13 @@
 
           <div class="cont">
             <div class="icon">
-              <img id="aplicacao_img" src="/img/icons/aplicacao.png" alt="" />
+              <img alt="" id="aplicacao_img" src="./img/icons/aplicacao.png" />
             </div>
             <div class="texto">
               <strong>Aplicação real</strong>
               <p>Projetos com foco direto em populações negligenciadas</p>
             </div>
+          </div>
         </div>
       </div>
     </section>
@@ -267,67 +319,72 @@
         <div class="conexoes">
           <h1>Conexões que impulsionam a ciência</h1>
           <p>
-            O dotLAB Brasil colabora com instituições que compartilham o compromisso com inovação científica e impacto social, 
-            fortalecendo projetos e ampliando nosso alcance na saúde pública.
+            O dotLAB Brasil colabora com instituições que compartilham o
+            compromisso com inovação científica e impacto social, fortalecendo
+            projetos e ampliando nosso alcance na saúde pública.
           </p>
         </div>
 
         <!-- Slider main container -->
         <section class="parceiros container">
             <ul id="image-list">
-                <li><div><img src="/img/logos/UPE.png" alt="Logo UPE"></div></li>
-                <li><div><img src="/img/logos/ecomp.png" alt="Logo ecomp"></div></li>
-                <li><div><img src="/img/logos/UFPE.png" alt="Logo UFPE"></div></li>
+                <li><div><img src="./img/logos/UPE.png" alt="Logo UPE"></div></li>
+                <li><div><img src="./img/logos/ecomp.png" alt="Logo ecomp"></div></li>
+                <li><div><img src="./img/logos/UFPE.png" alt="Logo UFPE"></div></li>
             </ul>
         </section>
+    </section>
 
     <footer class="footer">
       <div class="footer-container">
-        
         <!-- Logo e Contato -->
         <div class="footer-logo-contato">
-          <img src="img/logos/dotLab 2.png" alt="dotLAB Logo" class="footer-logo">
-
+          <img
+            alt="Logo do dotLAB Brasil - rodapé"
+            class="footer-logo"
+            src="./img/logos/dotLab 2.png"
+          />
           <div class="contato">
             <h3>Contato</h3>
             <p>
-              <img src="/img/icons/phone.png" alt="Ícone telefone" class="icon"> 
-                (00) 0000-0000
+              <img
+                alt="Ícone telefone"
+                class="icon"
+                src="./img/icons/phone.png"
+              />
+              (00) 0000-0000
             </p>
-
             <p>
-              <img src="/img/icons/email.png" alt="Ícone e-mail" class="icon">
-                dotlab@gmail.com
+              <img alt="Ícone e-mail" class="icon" src="./img/icons/email.png" /> contato@dotlabbrazil.com.br
             </p>
-
-            <p>
-              <img src="/img/icons/insta.png" alt="Ícone Instagram" class="icon">
-                @dotlabbrazil
+            <p onclick="window.location.href='https://www.instagram.com/dotlabbrazil/'">
+              <img
+                alt="Ícone Instagram"
+                class="icon"
+                src="./img/icons/insta.png"
+              />
+              @dotlabbrazil
             </p>
           </div>
         </div>
-
         <!-- Mapa do Site -->
         <div class="footer-links">
           <h3>Mapa do Site</h3>
           <ul>
             <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
+            <li><a href="#Iniciativas">Sobre</a></li>
+            <li><a href="./projetos.html">Projetos</a></li>
             <li><a href="#">Parceria</a></li>
           </ul>
         </div>
-
       </div>
-
       <!-- Rodapé -->
       <div class="footer-bottom">
         <p>© 2025 dotLAB Brasil. Todos os direitos reservados.</p>
       </div>
-    </footer> 
-
+    </footer>  
   </body>
-
+  
   <script src="index.js"></script>
   <script src="animacao.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

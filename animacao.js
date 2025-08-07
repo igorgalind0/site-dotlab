@@ -10,4 +10,3 @@ window.onload = () => {
             list.appendChild(clone); // Adiciona a cópia ao final da lista
         });
     };
-
