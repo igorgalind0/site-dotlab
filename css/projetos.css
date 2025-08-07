@@ -1,61 +1,77 @@
 /*CSS do Header*/
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 500px; /* espaçamento entre logo e menu */
+  padding-top: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header img {
-    width: 129px;
-    height: 129px;
+  width: 129px;
+  height: 129px;
+  margin: 20px;
+}
+
+/* Esconder botão em telas grandes */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: var(--cor-vermelho);
+  cursor: pointer;
 }
 
 /*CSS do menu*/
 
 nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  margin: 20px;
 }
 
-nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 47px;
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 47px;
 }
 
 nav ul li a {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--cor-preto);
-    position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cor-preto);
+  position: relative;
 }
 
 nav ul li a:hover {
-    color: var(--cor-vermelho);
+  color: var(--cor-vermelho);
 }
 
 nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 103%;
-    height: 3px;
-    background-color: var(--cor-vermelho);
-    transform: scaleX(0);
-    transition: transform ease 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 103%;
+  height: 3px;
+  background-color: var(--cor-vermelho);
+  transform: scaleX(0);
+  transition: transform ease 0.3s;
 }
 
 nav ul li a:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /*Banner & Banner Info*/
 
 .banner {
-    margin-top: 50px;
     position: relative;
 }
 
@@ -115,6 +131,11 @@ nav ul li a:hover::after {
 }
 
 /* Main */
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .cards {
     display: grid;
