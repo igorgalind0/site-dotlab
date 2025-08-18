@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dotLAB Brazil</title>
-     <link rel="stylesheet" href="./css/global.css">
-     <link rel="stylesheet" href="./css/projetos.css">
-     <link rel="stylesheet" href="./css/var.css">
-</head>
-<body>
 
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dotLAB Brazil</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/projetos.css" />
+    <link rel="stylesheet" href="./css/respansivos/projetos_responsivo.css" />
+    <link rel="stylesheet" href="./css/var.css" />
+  </head>
+
+  <body>
     <header class="container">
       <img alt="Logo do dotLAB Brasil" src="./img/logos/dotLab 1.png" />
       <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
@@ -23,200 +25,216 @@
       </nav>
     </header>
 
-    <section class="banner">
-            <img src="./img/img 6.png" id="fundo_img" alt=""> 
-            <div class="banner_info_container container">
-                <h1>Projetos - Soluções</h1>
-                <p>Projetos do dotLAB Brasil que aplicam inteligência artificial para enfrentar desafios da saúde pública, com foco nas Doenças Tropicais Negligenciadas.</p>
-            </div>
-    </section>  
+    <section class="banner" id="Iniciativas">
+      <div class="banner_info_container container">
+        <h1>Projetos - Soluções</h1>
+        <p>
+          Projetos do dotLAB Brasil que aplicam inteligência artificial para
+          enfrentar desafios da saúde pública, com foco nas Doenças Tropicais
+          Negligenciadas.
+        </p>
+      </div>
+    </section>
 
-    <main class="main-container container">
-        <img src="img/teia1-projeto.png" id="teia1-projetos" alt="" class="teia">
-        <img src="/img/teia2-projeto.png" id="teia2-projetos" alt="" class="teia">
-        
+    <main class="container">
+      <section class="main-section">
+        <img class="teia" id="teia1" src="./img/teia1-projeto.png" alt="" />
+        <img class="teia" id="teia2" src="./img/teia2-projeto.png" alt="" />
 
-        <section class="cards container">
-            <div class="card_caixa" data-color="#B1488A">
-
-                <div class="card_cont">
-                    <img src="./img/card_bg/angels.png" alt="">
-                    
-                </div>
-
-                 <div class="card_info" data-seta="/img/card_setas/seta_angels.png">
-                      <a href=""></a>
-                </div>
-                
-                <div class="card_hover_texto container">Predição do risco de óbito fetal ao longo do acompanhamento pré-natal contínuo, utilizando dados clínicos e modelos preditivos.
-                </div>
-                
+        <section class="cards_container">
+          <div class="card_caixa" data-color="#B1488A">
+            <div class="card_cont">
+              <img src="./img/card_bg/angels.png" alt="" />
             </div>
 
-            <div class="card_caixa" data-color="#6D349D">
-
-                <div class="card_cont">
-                    <img id="hansenai-projeto" src="./img/card_bg/hansenai.png" alt="">
-                </div>
-
-                <div class="card_info" data-seta="/img/card_setas/seta_hansenia.png">
-                      <a href=""></a>
-                </div>
-
-                <div class="card_hover_texto container">Predição e monitoramento inteligente da resposta ao tratamento da hanseníase, com base em dados clínicos e históricos do paciente.
-                </div>
-                
+            <div class="card_info" data-seta="/img/card_setas/seta_angels.png">
+              <a href=""></a>
             </div>
 
-            <div class="card_caixa" data-color="#3EB7A0">
+            <div class="card_hover_texto container">
+              Predição do risco de óbito fetal ao longo do acompanhamento
+              pré-natal contínuo, utilizando dados clínicos e modelos
+              preditivos.
+            </div>
+          </div>
 
-                <div class="card_cont">
-                    <img src="./img/card_bg/valeria.png" alt="">
-                </div>
-
-                <div class="card_info" data-seta="/img/card_setas/seta_valeria.png">
-                      <a href=""></a>
-                </div>
-                
-                <div class="card_hover_texto container">Identificação precoce e automatizada de arboviroses por meio de técnicas de inteligência artificial aplicadas a dados clínicos e epidemiológicos.
-                </div>
+          <div class="card_caixa" data-color="#6D349D">
+            <div class="card_cont">
+              <img
+                id="hansenai-projeto"
+                src="./img/card_bg/hansenai.png"
+                alt=""
+              />
             </div>
 
-            <div class="card_caixa" data-color="#8C0738">
-
-                <div class="card_cont">
-                    <img src="./img/card_bg/iara.png" alt="">
-                </div>
-
-                <div class="card_info" data-seta="/img/card_setas/seta_IAra.png">
-                      <a href=""></a>
-                </div>
-                
-                <div class="card_hover_texto container">Aplicação de técnicas de machine learning para vigilância ativa e preditiva da malária, com base em dados epidemiológicos e ambientais.
-                </div>
+            <div
+              class="card_info"
+              data-seta="/img/card_setas/seta_hansenia.png"
+            >
+              <a href=""></a>
             </div>
 
-            <div class="card_caixa" data-color="#411310">
-
-                <div class="card_cont">
-                    <img src="./img/card_bg/tito.png" alt="">
-                </div>
-                
-                <div class="card_info" data-seta="/img/card_setas/seta_tito.png">
-                      <a href=""></a>
-                </div>
-
-                <div class="card_hover_texto container">Prognóstico inteligente e antecipado de casos de tuberculose, utilizando modelos preditivos baseados em inteligência artificial e dados clínicos.
-                </div>
+            <div class="card_hover_texto container">
+              Predição e monitoramento inteligente da resposta ao tratamento da
+              hanseníase, com base em dados clínicos e históricos do paciente.
             </div>
+          </div>
+
+          <div class="card_caixa" data-color="#3EB7A0">
+            <div class="card_cont">
+              <img src="./img/card_bg/valeria.png" alt="" />
+            </div>
+
+            <div class="card_info" data-seta="/img/card_setas/seta_valeria.png">
+              <a href=""></a>
+            </div>
+
+            <div class="card_hover_texto container" id="valeria-texto">
+              Identificação precoce e automatizada de arboviroses por meio de
+              técnicas de inteligência artificial aplicadas a dados clínicos e
+              epidemiológicos.
+            </div>
+          </div>
+
+          <div class="card_caixa" data-color="#8C0738">
+            <div class="card_cont">
+              <img src="./img/card_bg/iara.png" alt="" />
+            </div>
+
+            <div class="card_info" data-seta="/img/card_setas/seta_IAra.png">
+              <a href=""></a>
+            </div>
+
+            <div class="card_hover_texto container">
+              Aplicação de técnicas de machine learning para vigilância ativa e
+              preditiva da malária, com base em dados epidemiológicos e
+              ambientais.
+            </div>
+          </div>
+
+          <div class="card_caixa" data-color="#411310">
+            <div class="card_cont">
+              <img src="./img/card_bg/tito.png" alt="" />
+            </div>
+
+            <div class="card_info" data-seta="/img/card_setas/seta_tito.png">
+              <a href=""></a>
+            </div>
+
+            <div class="card_hover_texto container" id="tito-texto">
+              Prognóstico inteligente e antecipado de casos de tuberculose,
+              utilizando modelos preditivos baseados em inteligência artificial
+              e dados clínicos.
+            </div>
+          </div>
         </section>
-        
-        <div class="texto-dashboard container">
+
+        <section class="dashboard">
+          <div class="texto-dashboard container">
             <h1>Painel interativo - Dashboards</h1>
-            <p>Visualize os dados que impulsionam decisões estratégicas em saúde, com painéis interativos alimentados por Inteligência Artificial.</p>
-        </div>
+            <p>
+              Visualize os dados que impulsionam decisões estratégicas em saúde,
+              com painéis interativos alimentados por Inteligência Artificial.
+            </p>
+          </div>
 
-        <section class="cards-dash container">
-
+          <section class="cards-dash container">
             <div class="card_caixa_dash" data-color="#B1488A">
-
-                <div class="card_cont_dash">
-                    <img src="/img/card_bg/dash-angels.png" alt="">
-                </div>
-
+              <div class="card_cont_dash">
+                <img src="/img/card_bg/dash-angels.png" alt="" />
+              </div>
             </div>
 
             <div class="card_caixa_dash" data-color="#6D349D">
-
-                <div class="card_cont_dash">
-                    <img src="/img/card_bg/dash-hansenai.png" alt="">
-                </div>
-
+              <div class="card_cont_dash">
+                <img src="/img/card_bg/dash-hansenai.png" alt="" />
+              </div>
             </div>
 
             <div class="card_caixa_dash" data-color="#3EB7A0">
-
-                <div class="card_cont_dash">
-                    <img src="/img/card_bg/dash-valeria.png" alt="">
-                </div>
-
+              <div class="card_cont_dash">
+                <img src="/img/card_bg/dash-valeria.png" alt="" />
+              </div>
             </div>
 
             <div class="card_caixa_dash" data-color="#043241">
-
-                <div class="card_cont_dash">
-                    <img src="/img/card_bg/dash-iara.png" alt="">
-                </div>
-
+              <div class="card_cont_dash">
+                <img src="/img/card_bg/dash-iara.png" alt="" />
+              </div>
             </div>
 
             <div class="card_caixa_dash" data-color="#007B55">
-
-                <div class="card_cont_dash">
-                    <img src="/img/card_bg/dash-penultimo.png" alt="">
-                </div>
-
+              <div class="card_cont_dash">
+                <img src="/img/card_bg/dash-penultimo.png" alt="" />
+              </div>
             </div>
 
             <div class="card_caixa_dash" data-color="#08A696">
-
-                <div class="card_cont_dash">
-                    <img src="/img/card_bg/dash-ultimo.png" alt="">
-                </div>
-
+              <div class="card_cont_dash">
+                <img src="/img/card_bg/dash-ultimo.png" alt="" />
+              </div>
             </div>
-
+          </section>
         </section>
-
+      </section>
     </main>
 
-        <footer class="footer">
+    <footer class="footer">
       <div class="footer-container">
-        
         <!-- Logo e Contato -->
         <div class="footer-logo-contato">
-          <img src="img/logos/dotLab 2.png" alt="dotLAB Logo" class="footer-logo">
-
+          <img
+            alt="Logo do dotLAB Brasil - rodapé"
+            class="footer-logo"
+            src="./img/logos/dotLab 2.png"
+          />
           <div class="contato">
             <h3>Contato</h3>
             <p>
-              <img src="/img/icons/phone.png" alt="Ícone telefone" class="icon"> 
-                (00) 0000-0000
+              <img
+                alt="Ícone telefone"
+                class="icon"
+                src="./img/icons/phone.png"
+              />
+              (00) 0000-0000
             </p>
-
             <p>
-              <img src="/img/icons/email.png" alt="Ícone e-mail" class="icon">
-                dotlab@gmail.com
+              <img
+                alt="Ícone e-mail"
+                class="icon"
+                src="./img/icons/email.png"
+              />
+              contato@dotlabbrazil.com.br
             </p>
-
-            <p>
-              <img src="/img/icons/insta.png" alt="Ícone Instagram" class="icon">
-                @dotlabbrazil
+            <p
+              onclick="window.location.href='https://www.instagram.com/dotlabbrazil/'"
+            >
+              <img
+                alt="Ícone Instagram"
+                class="icon"
+                src="./img/icons/insta.png"
+              />
+              @dotlabbrazil
             </p>
           </div>
         </div>
-
         <!-- Mapa do Site -->
         <div class="footer-links">
           <h3>Mapa do Site</h3>
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="#Iniciativas">Sobre</a></li>
+            <li><a href="./projetos.html">Projetos</a></li>
             <li><a href="#">Parceria</a></li>
           </ul>
         </div>
-
       </div>
-
       <!-- Rodapé -->
       <div class="footer-bottom">
         <p>© 2025 dotLAB Brasil. Todos os direitos reservados.</p>
       </div>
-    </footer> 
+    </footer>
+  </body>
 
-</body>
-
-<script src="./JS/projetos.js"></script>
-
+  <script src="./JS/projetos.js"></script>
 </html>
